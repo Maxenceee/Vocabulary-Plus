@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="LangData" representedClassName="LangData" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="language1" attributeType="String"/>
+        <attribute name="language2" attributeType="String"/>
+        <attribute name="languages" attributeType="String"/>
+        <attribute name="numOfWrongAnswer" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="tags" optional="YES" attributeType="String"/>
+        <relationship name="tagRelationship" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tags" inverseName="langItem" inverseEntity="Tags"/>
+    </entity>
+    <entity name="Statistics" representedClassName="Statistics" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="day" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="goodAnswers" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="lastTryGoodAnswers" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="lastTryTotal" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="total" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="totalLetters" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="wrongAnswers" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="wrongLetters" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Tags" representedClassName="Tags" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="langItem" toMany="YES" deletionRule="Nullify" destinationEntity="LangData" inverseName="tagRelationship" inverseEntity="LangData"/>
+    </entity>
+    <elements>
+        <element name="LangData" positionX="-63" positionY="-18" width="128" height="119"/>
+        <element name="Statistics" positionX="-54" positionY="27" width="128" height="149"/>
+        <element name="Tags" positionX="-63" positionY="9" width="128" height="59"/>
+    </elements>
+</model>

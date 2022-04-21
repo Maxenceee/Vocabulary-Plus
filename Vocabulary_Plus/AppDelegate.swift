@@ -4,14 +4,21 @@
 //
 //  Created by Maxence Gama on 24/03/2021.
 //
+/*
+                                               __  __                             ___
+                                              |  \/  |__ ___ _____ _ _  __ ___   / __|__ _ _ __  __ _
+                                              | |\/| / _` \ \ / -_) ' \/ _/ -_) | (_ / _` | '  \/ _` |
+                                              |_|  |_\__,_/_\_\___|_||_\__\___|  \___\__,_|_|_|_\__,_|
+                      
+   
+*/
+
 
 import UIKit
 import CoreData
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
