@@ -1,10 +1,10 @@
-#Vocabulary-Plus
+# Vocabulary-Plus
 
-##Train your vocabulary
+## Train your vocabulary
 
 A simple way to train your vocabulary in the languages you're learning
 
 
-##Usage
+## Usage
 
 XCode project with required Cocoapods installation 
